@@ -38,7 +38,7 @@ Menus:
 params:
   title: "Pratyusava Baral"
   description: Gravitational Wave Physicist & Data Scientist
-  favicon: "/fav.png"
+  #favicon: "/fav.png"
 
   useBootstrapCDN: false
   mathjax: false
@@ -76,8 +76,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Pratyusava Baral."
-    subtitle: "I detect gravitational waves from the cosmos"
-    content: "A PhD candidate in Physics at the University of Wisconsin-Milwaukee, specializing in gravitational wave detection and parameter estimation for current and future observatories."
+    subtitle: "I am a gravitational waves astrophsicist"
+    content: "I am currently a PhD candidate in Physics at the University of Wisconsin-Milwaukee, specializing in gravitational wave detection and parameter estimation for current and future observatories."
     image: /images/hero.svg
     bottomImage:
       enable: true
@@ -103,37 +103,24 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a PhD candidate in Physics at the University of Wisconsin-Milwaukee, working on detecting and measuring gravitational waves in current and future observatories. My research focuses on parameter estimation of gravitational wave signals, localization studies for next-generation detectors like Cosmic Explorer, and developing machine learning tools for gravitational wave astronomy.
-
-      As a member of the LIGO-Virgo-KAGRA collaboration, I have contributed to several major publications and developed novel techniques for analyzing gravitational wave data. My work spans both theoretical aspects of general relativity and practical data analysis challenges in multi-messenger astronomy.
+      I specialize in detection and parameter estimation of gravitational waves in ground-based detectors. I am particularly interested in developing novel techniques for analyzing data from current and next-generation observatories, including LIGO, Virgo, KAGRA, and future detectors like the Einstein Telescope and Cosmic Explorer.
+      I am also involed in science outreach. As a member of CoffeeShop Astrophysics, I have given various public talks.
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "I have worked extensively with"
       items:
         - "Python"
-        - "Bilby/LALInference"
+        - "Bilby"
         - "GstLAL"
         - "PyTorch"
-        - "NumPy/SciPy"
-        - "Git/GitLab"
+        - "Git"
+        - "HTCondor"
+
 
   # Experience
   experience:
     enable: true
     items:
-      - job: "PhD Candidate in Physics"
-        company: "University of Wisconsin-Milwaukee"
-        companyUrl: "https://uwm.edu"
-        date: "2021 - present"
-        featuredLink:
-          enable: false
-        content: |
-          Conducting research on detecting and measuring gravitational waves in current and future observatories under the supervision of Prof. Jolien Creighton and Prof. Patrick Brady.
-
-          - Developed novel parameter estimation techniques for gravitational wave signals with frequency-dependent antenna responses
-          - Contributed to LIGO-Virgo-KAGRA collaboration publications including GWTC-4.0 catalog
-          - Implemented multibanding and heterodyne likelihoods for next-generation gravitational wave detectors
-
       - job: "Graduate Teaching Assistant"
         company: "University of Wisconsin-Milwaukee"
         companyUrl: "https://uwm.edu"
@@ -145,20 +132,20 @@ params:
           - Calculus-based Mechanics Lab (Spring 2022, 2023 & Fall 2024)
           - Undergraduate Quantum Mechanics (Spring 2021)
 
-      - job: "Research Contributor"
-        company: "LIGO-Virgo-KAGRA Collaboration"
-        companyUrl: "https://www.ligo.org"
-        date: "2021 - present"
-        featuredLink:
-          enable: true
-          name: "View publications"
-          url: "https://arxiv.org/search/?searchtype=author&query=Baral%2C+P"
-        content: |
-          Active member of the LIGO-Virgo-KAGRA collaboration contributing to gravitational wave detection and analysis.
+      # - job: "Research Contributor"
+      #   company: "LIGO-Virgo-KAGRA Collaboration"
+      #   companyUrl: "https://www.ligo.org"
+      #   date: "2021 - present"
+      #   featuredLink:
+      #     enable: true
+      #     name: "View publications"
+      #     url: "https://arxiv.org/search/?searchtype=author&query=Baral%2C+P"
+      #   content: |
+      #     Active member of the LIGO-Virgo-KAGRA collaboration contributing to gravitational wave detection and analysis.
 
-          - Co-authored multiple collaboration papers including major catalog releases
-          - Developed machine learning tools for gravitational wave event selection
-          - Contributed to GstLAL pipeline development for both offline analysis and online operations
+      #     - Co-authored multiple collaboration papers including major catalog releases
+      #     - Developed machine learning tools for gravitational wave event selection
+      #     - Contributed to GstLAL pipeline development for both offline analysis and online operations
 
   # Education
   education:
@@ -171,53 +158,46 @@ params:
           url: "https://uwm.edu"
         date: "2021 - present"
         content: |-
-          Thesis: Detecting and Measuring Gravitational Waves in Current and Future Observatories
+          Thesis: Detecting and Measuring Gravitational Waves in Current and Future Observatories \\
           Advisors: Prof. Jolien Creighton and Prof. Patrick Brady
-          
           Research Focus:
-          - Parameter estimation of gravitational wave signals
-          - Localization studies for next-generation detectors
-          - Machine learning applications in gravitational wave astronomy
-          - Development of analysis tools for the LIGO-Virgo-KAGRA collaboration
-        featuredLink:
+          -  Detection of gravitational waves in low-latency using the GstLAL pipeline
+          -  Developing machine learning–based tools to select optimal skymaps from multiple pipeline outputs
+          -  Developing inference techniques for next-generation detectors incorporating Earth's rotation and detector size effects
+      - featuredLink:
           enable: false
-      - title: "Bachelor and Masters in Science"
+      - title: "Bachelor and Masters of Science"
         school:
           name: "Presidency University, Kolkata"
           url: "https://presidencyuniversity.ac.in"
         date: "2015 - 2020"
         content: |-
-          Integrated program combining undergraduate and postgraduate studies in Physics.
-          
-          Research Experience:
-          - Published research on gravitational waves with orbital angular momentum
-          - Worked on dark energy studies using gravitational wave observatories
-          - Developed theoretical frameworks for modified gravity theories
+          Graduated with physics major with a focus in astrophysics.
         featuredLink:
           enable: false
 
-  # Achievements
-  achievements:
-    enable: true
-    items:
-      - title: Distinguished Dissertator Fellowship
-        content: Awarded by University of Wisconsin-Milwaukee for outstanding doctoral research in gravitational wave physics.
-        image: /images/achievement.jpg
-      - title: Graduate and Professional Research Fellowship
-        content: Wisconsin Space Grant Consortium fellowship received for three consecutive years (2023, 2024, 2025).
-        image: /images/achievement.jpg
-      - title: Distinguished Graduate Student Fellowship
-        content: University of Wisconsin-Milwaukee recognition for academic excellence and research contributions.
-        image: /images/achievement.jpg
-      - title: Chancellor's Graduate Student Award
-        content: Five-time recipient (2021-2025) of UWM's prestigious award for outstanding graduate students.
-        image: /images/achievement.jpg
-      - title: Best Talk Award
-        content: Received at Presision Presidency Physics Summit, Kolkata, India for presentation on "Gravitational Waves carrying Orbital Angular Momentum".
-        image: /images/achievement.jpg
-      - title: David Lichtman Research Fellowship
-        content: Inaugural research fellowship from University of Wisconsin-Milwaukee supporting gravitational wave research.
-        image: /images/achievement.jpg
+  # # Achievements
+  # achievements:
+  #   enable: true
+  #   items:
+  #     - title: Distinguished Dissertator Fellowship
+  #       content: Awarded by University of Wisconsin-Milwaukee for outstanding doctoral research in gravitational wave physics.
+  #       image: /images/achievement.jpg
+  #     - title: Graduate and Professional Research Fellowship
+  #       content: Wisconsin Space Grant Consortium fellowship received for three consecutive years (2023, 2024, 2025).
+  #       image: /images/achievement.jpg
+  #     - title: Distinguished Graduate Student Fellowship
+  #       content: University of Wisconsin-Milwaukee recognition for academic excellence and research contributions.
+  #       image: /images/achievement.jpg
+  #     - title: Chancellor's Graduate Student Award
+  #       content: Five-time recipient (2021-2025) of UWM's prestigious award for outstanding graduate students.
+  #       image: /images/achievement.jpg
+  #     - title: Best Talk Award
+  #       content: Received at Presision Presidency Physics Summit, Kolkata, India for presentation on "Gravitational Waves carrying Orbital Angular Momentum".
+  #       image: /images/achievement.jpg
+  #     - title: David Lichtman Research Fellowship
+  #       content: Inaugural research fellowship from University of Wisconsin-Milwaukee supporting gravitational wave research.
+  #       image: /images/achievement.jpg
 
   # projects
   projects:
@@ -254,7 +234,7 @@ params:
             url: https://git.ligo.org/pratyusava.baral/preferred_event_ml
 
       - title: GstLAL Contributions
-        content: Contributed to the GstLAL gravitational wave analysis pipeline, working on both offline analysis improvements and online operations for the LIGO-Virgo-KAGRA collaboration.
+        content: I work on improving real-time and offline analysis pipelines used to detect gravitational waves. This includes developing, monitoring and automating key processes and ensuring the accuracy and reliability of detections—critical for understanding astrophysical events.
         image: /images/projects/profile2.jpg
         featured:
           name: LIGO GitLab
