@@ -98,7 +98,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a graduate student at University of Wisconsin–Milwaukee, working on the low-latency detection of gravitational waves. As a core developer of gstLAL, I primarily focus on the offline analysis used to assess pipeline sensitivity. In addition, I have contributed to various aspects of the broader low-latency detection infrastructure. My research interests also include Bayesian parameter estimation, particularly in the context of next-generation gravitational-wave detectors. I am passionate about improving the precision and efficiency of gravitational-wave data analysis to support real-time astrophysical discoveries.
+      I am a member of the LIGO-Virgo-KAGRA collaboration, working on the low-latency detection of gravitational waves. As a core developer of gstLAL, I primarily focus on the offline analysis used to assess pipeline sensitivity. In addition, I have contributed to various aspects of the broader low-latency detection infrastructure. My research interests also include Bayesian parameter estimation, particularly in the context of next-generation gravitational-wave detectors. I am passionate about improving the precision and efficiency of gravitational-wave data analysis to support real-time astrophysical discoveries.
 
       In addition to my research, I am actively involved in science outreach. As a member of CoffeeShop Astrophysics, I have given numerous public talks aimed at making complex astrophysical topics accessible and engaging to general audiences.
     skills:
@@ -204,8 +204,8 @@ params:
         content: I currently help develop, test, and operate the low-latency (online) analysis. Previously, I automated key maintenance tasks to improve the pipeline’s efficiency and reliability—work that continues to be used in current operations. On the offline side, I have contributed to reevaluating the significance of low-latency triggers and have extended online methods to enable the filtering and ranking of simulated signals (injections). These developments are essential for conducting injection campaigns that measure pipeline sensitivity and properly account for selection effects, which are critical for accurately estimating astrophysical parameters such as merger rates.
         image: /images/projects/profile2.jpg
         featured:
-          name: LIGO GitLab
-          link: https://git.ligo.org/lscsoft/gstlal
+          name: GstLAL Repo
+          link: https://git.ligo.org/lscsoft/gstlal/-/tree/offline_new-workflow?ref_type=heads
         badges:
           - "C"
           - "Python"
@@ -213,9 +213,9 @@ params:
           - "Signal Processing"
         links:
           - icon: fab fa-gitlab
-            url: https://git.ligo.org/lscsoft/gstlal
+            url: https://git.ligo.org/lscsoft/gstlal/-/tree/offline_new-workflow?ref_type=heads
       - title: Bilby-xG
-        content: Extended the Bilby gravitational wave inference library for next-generation detectors, implementing Earth's rotation effects, detector size considerations, and multibanding techniques.
+        content: I developed the first comprehensive Bayesian parameter estimation (PE) framework using Bilby, a widely used PE software package, to compute accurate posteriors for such long-duration, high-SNR signals in CE. Using this framework, I investigated the localization performance of a single CE detector for binary neutron star (BNS) signals with signal-to-noise ratios around 1000, where traditional Fisher matrix methods break down due to multimodalities in the parameter space. I further extended the framework to include higher-order modes, demonstrating that Bayesian PE remains feasible for next-generation detectors even when accounting for Earth’s rotation, finite detector size, and higher-mode contributions. This work plays a key role in validating Fisher-based forecasts used in the ongoing Cosmic Explorer Science Traceability Matrix.
         image: /images/projects/profile.png
         featured:
           name: GitLab
@@ -224,13 +224,13 @@ params:
           - "Python"
           - "Bilby"
           - "Gravitational Waves"
-          - "LALInference"
+          - "Dynesty"
         links:
           - icon: fab fa-gitlab
             url: https://git.ligo.org/pratyusava.baral/bilby-x-g
 
       - title: Preferred Event Selector
-        content: Developed a neural network-based tool for selecting optimal skymaps from gravitational wave detection pipeline outputs using PyTorch and machine learning techniques.
+        content: For every gravitational-wave event, multiple candidate alerts are usually uploaded, either from different search pipelines or multiple times by the same pipeline. This poses a key challenge in identifying the most suitable event for electromagnetic follow-up, particularly the one with the most accurate sky localization. To address this, I demonstrated the feasibility of a neural network–based event selector that can identify, in real time, the preferred GW trigger from a set of candidates. This machine learning–based approach outperforms the current infrastructure, which selects events solely based on signal-to-noise ratio, while preserving pipeline-specific performance. The selector is pipeline-agnostic, lightweight, requires only ~1 minute of training on a standard laptop, and delivers instantaneous inference, making it highly suitable for low-latency applications in multi-messenger astronomy.
         image: /images/projects/converter.jpg
         featured:
           name: GitLab
