@@ -76,9 +76,9 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Pratyusava Baral."
-    subtitle: "I am a gravitational waves astrophsicist"
+    subtitle: "I am a gravitational wave astrophysicist"
     content: "I am currently a PhD candidate in Physics at the University of Wisconsin-Milwaukee, specializing in gravitational wave detection and parameter estimation for current and future observatories."
-    image: /images/hero.svg
+    image: /images/prat.jpg
     bottomImage:
       enable: true
     button:
@@ -89,13 +89,8 @@ params:
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/pratyusava
         - icon: fab fa-linkedin
           url: https://linkedin.com/in/pratyusava-baral
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
 
   # About
   about:
