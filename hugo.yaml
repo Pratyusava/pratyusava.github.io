@@ -98,8 +98,9 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I specialize in detection and parameter estimation of gravitational waves in ground-based detectors. I am particularly interested in developing novel techniques for analyzing data from current and next-generation observatories, including LIGO, Virgo, KAGRA, and future detectors like the Einstein Telescope and Cosmic Explorer.
-      I am also involed in science outreach. As a member of CoffeeShop Astrophysics, I have given various public talks.
+      I am a graduate student at University of Wisconsin–Milwaukee, working on the low-latency detection of gravitational waves. As a core developer of gstLAL, I primarily focus on the offline analysis used to assess pipeline sensitivity. In addition, I have contributed to various aspects of the broader low-latency detection infrastructure. My research interests also include Bayesian parameter estimation, particularly in the context of next-generation gravitational-wave detectors. I am passionate about improving the precision and efficiency of gravitational-wave data analysis to support real-time astrophysical discoveries.
+
+      In addition to my research, I am actively involved in science outreach. As a member of CoffeeShop Astrophysics, I have given numerous public talks aimed at making complex astrophysical topics accessible and engaging to general audiences.
     skills:
       enable: true
       title: "I have worked extensively with"
@@ -153,14 +154,15 @@ params:
           url: "https://uwm.edu"
         date: "2021 - present"
         content: |-
-          Thesis: Detecting and Measuring Gravitational Waves in Current and Future Observatories \\
+          Thesis: Detecting and Measuring Gravitational Waves in Current and Future Observatories
+
           Advisors: Prof. Jolien Creighton and Prof. Patrick Brady
           Research Focus:
           -  Detection of gravitational waves in low-latency using the GstLAL pipeline
           -  Developing machine learning–based tools to select optimal skymaps from multiple pipeline outputs
           -  Developing inference techniques for next-generation detectors incorporating Earth's rotation and detector size effects
-      - featuredLink:
-          enable: false
+        featuredLink:
+            enable: false
       - title: "Bachelor and Masters of Science"
         school:
           name: "Presidency University, Kolkata"
@@ -198,6 +200,20 @@ params:
   projects:
     enable: true
     items:
+      - title: GstLAL Contributions
+        content: I currently help develop, test, and operate the low-latency (online) analysis. Previously, I automated key maintenance tasks to improve the pipeline’s efficiency and reliability—work that continues to be used in current operations. On the offline side, I have contributed to reevaluating the significance of low-latency triggers and have extended online methods to enable the filtering and ranking of simulated signals (injections). These developments are essential for conducting injection campaigns that measure pipeline sensitivity and properly account for selection effects, which are critical for accurately estimating astrophysical parameters such as merger rates.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: LIGO GitLab
+          link: https://git.ligo.org/lscsoft/gstlal
+        badges:
+          - "C"
+          - "Python"
+          - "GStreamer"
+          - "Signal Processing"
+        links:
+          - icon: fab fa-gitlab
+            url: https://git.ligo.org/lscsoft/gstlal
       - title: Bilby-xG
         content: Extended the Bilby gravitational wave inference library for next-generation detectors, implementing Earth's rotation effects, detector size considerations, and multibanding techniques.
         image: /images/projects/profile.png
@@ -228,20 +244,7 @@ params:
           - icon: fab fa-gitlab
             url: https://git.ligo.org/pratyusava.baral/preferred_event_ml
 
-      - title: GstLAL Contributions
-        content: I work on improving real-time and offline analysis pipelines used to detect gravitational waves. This includes developing, monitoring and automating key processes and ensuring the accuracy and reliability of detections—critical for understanding astrophysical events.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: LIGO GitLab
-          link: https://git.ligo.org/lscsoft/gstlal
-        badges:
-          - "C"
-          - "Python"
-          - "GStreamer"
-          - "Signal Processing"
-        links:
-          - icon: fab fa-gitlab
-            url: https://git.ligo.org/lscsoft/gstlal
+      
 
   #Contact
   contact:
